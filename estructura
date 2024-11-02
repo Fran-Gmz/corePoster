@@ -1,0 +1,25 @@
+mi-proyecto/
+│
+├── frontend/                # Carpeta para el proyecto Astro
+│   ├── public/              # Archivos estáticos que se servirán
+│   ├── src/                 # Código fuente de Astro
+│   │   ├── components/      # Componentes de React (o lo que uses)
+│   │   ├── pages/           # Páginas de tu sitio
+│   │   └── layouts/         # Layouts compartidos
+│   ├── package.json         # Dependencias y scripts de Astro
+│   ├── astro.config.mjs     # Configuración de Astro
+│   └── ...                  # Otros archivos y carpetas de configuración
+│
+├── backend/                 # Carpeta para el proyecto Flask
+│   ├── app/                 # Código fuente de Flask
+│   │   ├── _init_.py      # Inicialización de la aplicación
+│   │   ├── routes.py        # Rutas de la API
+│   │   ├── models.py        # Modelos de datos (si usas ORM)
+│   │   └── ...              # Otros módulos y utilidades
+│   ├── requirements.txt     # Dependencias de Flask
+│   ├── config.py            # Configuración de la aplicación
+│   └── run.py               # Script para ejecutar la aplicación
+│
+├── .gitignore               # Archivos y carpetas a ignorar por Git
+├── README.md                # Documentación del proyecto
+└── docker-compose.yml       # Opcional: para ejecutar ambos servicios en contenedores
