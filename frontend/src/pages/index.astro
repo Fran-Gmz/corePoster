@@ -1,16 +1,72 @@
 ---
+import Layout from '../layouts/Layout.astro'
+import Carta from '../components/carta.astro'
 
+const logo = '../../public/favicon.svg'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Welcome to Astro">
+
+	<div class="w-full h-96 fondo-gradient  grid grid-cols-2 grid-rows-3 ">
+		<h2 class="w-full h-full col-span-1 mb-28 pl-24 row-span-3 place-content-center text-5xl text-center  text-white font-mono">Welcome Lorem ipsum dolor sit amet consectetur. </h2>
+		<img class="w-full h-full col-span-1 row-span-2" src="" alt="img">
+
+	</div>
+
+	<section class="grid grid-cols-1 bg-gray-100" >
+		<div class="grid grid-cols-1 mt-10">
+			<h2 class="text text-4xl text-center font-semibold underline decoration-double decoration-white italic pl-5 pr-5">About our product</h2>
+		</div>
+		<div class="grid grid-cols-1 gap-5 m-5 p-5 sm:grid-cols-2 sm:gap-14 sm:m-10 sm:p-10 xl:grid-cols-4 "> 
+			<Carta 
+				title='Web Desing'
+				text='		Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nisi obcaecati explicabo recusandae commodi animi consequuntur.'
+				img='/images/computer.svg'/>
+			<Carta 
+				title='Web Desing'
+				text='		Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nisi obcaecati explicabo recusandae commodi animi consequuntur.'
+				img='/images/computer.svg'/>
+
+			<Carta 
+				title='Web Desing'
+				text='		Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nisi obcaecati explicabo recusandae commodi animi consequuntur.'
+				img='/images/computer.svg'/>
+			<Carta 
+				title='Web Desing'
+				text='		Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nisi obcaecati explicabo recusandae commodi animi consequuntur.'
+				img='/images/computer.svg'/>
+			
+		</div>
+
+
+	</section>
+
+	<section class="grid grid-cols-1 justify-center items-center bg-white">
+		<div class="grid grid-cols-1 mt-10">
+			<h2 class="text text-4xl text-center font-semibold underline decoration-double decoration-gray-100 italic pl-5 pr-5">Our works</h2>
+		</div>
+		<div class="grid grid-cols-1 gap-5 m-5 p-5 sm:grid-cols-1 sm:gap-14 sm:m-10 sm:p-10  md:grid-cols-2 lg:grid-cols-3 justify-items-center content-center">
+			<img class="w-80 h-52 bg-gray-100  text-center rounded-lg duration-500 hover:-translate-y-3.5 hover:cursor-pointer hover:shadow-2xl shadow-black" src="/images/ciudad.jpg" alt="img">
+			<img class="w-80 h-52 bg-gray-100  text-center rounded-lg duration-500 hover:-translate-y-3.5 hover:cursor-pointer hover:shadow-2xl shadow-black" src="/images/ciudad.jpg" alt="img">
+			<img class="w-80 h-52 bg-gray-100  text-center rounded-lg duration-500 hover:-translate-y-3.5 hover:cursor-pointer hover:shadow-2xl shadow-black" src="/images/ciudad.jpg" alt="img">
+			<img class="w-80 h-52 bg-gray-100  text-center rounded-lg duration-500 hover:-translate-y-3.5 hover:cursor-pointer hover:shadow-2xl shadow-black" src="/images/ciudad.jpg" alt="img">
+			<img class="w-80 h-52 bg-gray-100  text-center rounded-lg duration-500 hover:-translate-y-3.5 hover:cursor-pointer hover:shadow-2xl shadow-black" src="/images/ciudad.jpg" alt="img">
+			<img class="w-80 h-52 bg-gray-100  text-center rounded-lg duration-500 hover:-translate-y-3.5 hover:cursor-pointer hover:shadow-2xl shadow-black" src="/images/ciudad.jpg" alt="img">
+		</div>
+
+	</section>
+
+		
+
+	
+	
+</Layout>
+
+<style >
+	.fondo-gradient{
+		background: rgb(0,0,0);
+		background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,6,1) 24%, rgba(3,3,32,1) 48%, rgba(7,9,41,1) 73%, rgba(34,49,98,1) 97%);
+	}
+
+</style>
+
